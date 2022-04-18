@@ -260,7 +260,7 @@
             <div class="inner">
                 <span>Hoşgeldin Developer!</span>
                 <span>Biz Social Dev Hub Topluluğu.</span>
-                <span>But my real goal is to <a class="blue">volkana götten</a> <a class="blueb">girmek</a>.</span>
+                <span>But my real goal is to <a class="blue">buum</a> <a class="blueb">buum</a>.</span>
             </div>
         </div>
     </div>
