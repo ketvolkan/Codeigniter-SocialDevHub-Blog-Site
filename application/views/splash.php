@@ -260,7 +260,9 @@
             <div class="inner">
                 <span>Hoşgeldin Developer!</span>
                 <span>Biz Social Dev Hub Topluluğu.</span>
-                <span>But my real goal is to <a class="blue">300</a> <a class="blueb">500</a>.</span>
+
+                <span>But my real goal is to <a class="blue">buum</a> <a class="blueb">buum</a>.</span>
+
             </div>
         </div>
     </div>
