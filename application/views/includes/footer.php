@@ -4,34 +4,39 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
+                        <h4 class="text-uppercase mb-4">Başa Dön</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#page-top">
+                            <i class="fa-solid fa-angles-up"></i> </a>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <h4 class="text-uppercase mb-4">Sosyal Medya</h4>
+                        <a class="btn btn-outline-light btn-social mx-1"
+                            href="https://www.instagram.com/canchavo7/?hl=tr">
+                            <i class="fa-brands fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1"
+                            href="https://github.com/ketvolkan/Codeigniter-SocialDevHub-Blog-Site">
+                            <i class="fa-brands fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1"
+                            href="https://www.tiktok.com/@socialdevhub?lang=tr-TR"><i
+                                class="fa-brands fa-tiktok"></i></a>
                     </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Tasarımcılar</h4>
+                        <a class="btn btn-outline-light btn-social mx-1"
+                            href="https://www.instagram.com/canchavo7/?hl=tr">
+                            <i class="fa-solid fa-user"></i> <a class="btn btn-outline-light btn-social mx-1"
+                                href="https://www.instagram.com/ketvlkn/?hl=tr">
+                                <i class="fa-solid fa-user"></i> <a class="btn btn-outline-light btn-social mx-1"
+                                    href="https://www.instagram.com/bbaranozel/?hl=tr">
+                                    <i class="fa-solid fa-user"></i></a>
+                                </p>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white bg-head">
-            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+            <div class="container"><small>Tüm Hakları Saklıdır &copy; <?php echo date("Y-M-D"); ?></small></div>
         </div>
