@@ -249,6 +249,10 @@
             margin-top: -140px;
         }
     }
+
+    figure {
+        margin: 0;
+    }
     </style>
 
 
@@ -257,6 +261,13 @@
 <link rel="icon" href="<?=base_url("assets");?>/img/Socialdevhublogo3.png" type="image/gif">
 
 <body>
+    <audio controls autoplay>
+        <source src="<?=base_url("assets");?>/img/splashmp3.mp3" type="audio/mpeg">
+        <source src="myAudio.ogg" type="audio/ogg">
+
+
+    </audio>
+
     <div class="container">
         <div class="scroller">
             <div class="inner">
