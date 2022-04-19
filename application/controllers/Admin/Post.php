@@ -6,23 +6,34 @@ class Post extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model("Post_model");
+        $this->load->model("post_model");
+        $this->load->model("user_model");
         array_push($this->viewFolder, "Gönderi İşlemleri");
     }
 
     public function index()
     {
+        $posts = $this->post_model->getAll();
+        $users = $this->user_model->getAll();
+
         array_push($this->viewFolder, "Tüm Gönderiler");
         $viewData = [
             "viewFolder" => $this->viewFolder,
+            "posts" => $posts,
+            "users" => $users
         ];
         $this->load->view("admin/post/list_post", $viewData);
     }
     public function lists()
     {
+        $posts = $this->post_model->getAll();
+        $users = $this->user_model->getAll();
+
         array_push($this->viewFolder, "Tüm Gönderiler");
         $viewData = [
             "viewFolder" => $this->viewFolder,
+            "posts" => $posts,
+            "users" => $users
         ];
         $this->load->view("admin/post/list_post", $viewData);
     }
