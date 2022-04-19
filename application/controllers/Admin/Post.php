@@ -6,6 +6,7 @@ class Post extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->model("Post_model");
         array_push($this->viewFolder, "Gönderi İşlemleri");
     }
 
@@ -49,5 +50,14 @@ class Post extends CI_Controller
             "viewFolder" => $this->viewFolder,
         ];
         $this->load->view("admin/post/update_post", $viewData);
+    }
+    public function insertPost()
+    {
+    }
+    public function deletePost()
+    {
+    }
+    public function updatePost()
+    {
     }
 }
