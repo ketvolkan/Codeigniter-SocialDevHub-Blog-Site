@@ -9,7 +9,7 @@
     <?php $this->load->view("admin/includes/content_header.php"); ?>
     <section class="content">
         <div class="card card-dark">
-            <form action="<?php echo base_url("Admin/Post/insertPost") ?>" method="POST">
+            <form action="<?php echo base_url("Admin/Post/insertPost") ?>" method="POST" enctype="multipart/form-data">
                 <div class="card-body">
                     <div class="form-group">
                         <label for="title">Başlık</label>
