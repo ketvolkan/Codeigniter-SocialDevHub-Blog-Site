@@ -1,12 +1,12 @@
 <!-- /.content-wrapper -->
 <footer class="main-footer">
-    <strong>Copyright <a href="<?php echo base_url("/") ?>">Social Dev Hub</a></strong>
-    All rights reserved.
+    <strong>Made By <a href="<?php echo base_url("/") ?>">Social Dev Hub</a></strong>
+
     <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 1
+        <?php echo date("Y M d"); ?>
     </div>
 </footer>
-
+<script></script>
 <!-- Control Sidebar -->
 <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -45,7 +45,7 @@
 <!-- AdminLTE App -->
 <script src="<?php echo base_url("assets/adminAssets/dist/js/adminlte.js") ?>"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="<?php echo base_url("assets/adminAssets/dist/js/demo.js") ?>"></script>
+<script src="<?php echo base_url("assets/adminAssets/dist/js/demo2.js") ?>"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?php echo base_url("assets/adminAssets/dist/js/pages/dashboard.js") ?>"></script>
 </body>
