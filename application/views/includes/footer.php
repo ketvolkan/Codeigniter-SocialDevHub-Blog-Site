@@ -38,5 +38,5 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white bg-head">
-            <div class="container"><small>Tüm Hakları Saklıdır &copy; <?php echo date("Y-M-D"); ?></small></div>
+            <div class="container"><small>Tüm Hakları Saklıdır &copy; <?php echo date("Y"); ?></small></div>
         </div>
