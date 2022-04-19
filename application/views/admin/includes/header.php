@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="<?php echo base_url("assets/adminAssets/daterangepicker/daterangepicker.css") ?>">
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo base_url("assets/adminAssets/summernote/summernote-bs4.min.css") ?>">
+    <script src='<?php echo base_url("assets/adminAssets/") ?>tinymce/js/tinymce/tinymce.min.js'></script>
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

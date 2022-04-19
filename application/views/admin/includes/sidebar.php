@@ -17,18 +17,6 @@
             </div>
         </div>
 
-        <!-- SidebarSearch Form -->
-        <div class="form-inline">
-            <div class="input-group" data-widget="sidebar-search">
-                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-                <div class="input-group-append">
-                    <button class="btn btn-sidebar">
-                        <i class="fas fa-search fa-fw"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -38,7 +26,6 @@
                         <p>
                             Gönderiler
                             <i class="fas fa-angle-left right"></i>
-
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
@@ -74,7 +61,6 @@
                         <p>
                             Kullanıcılar
                             <i class="fas fa-angle-left right"></i>
-
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
@@ -110,7 +96,6 @@
                         <p>
                             Ayarları
                             <i class="fas fa-angle-left right"></i>
-
                         </p>
                     </a>
                     <ul class="nav nav-treeview">

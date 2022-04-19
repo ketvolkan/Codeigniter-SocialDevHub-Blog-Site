@@ -8,20 +8,43 @@
 <div class="content-wrapper">
     <?php $this->load->view("admin/includes/content_header.php"); ?>
     <section class="content">
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">Title</h3>
+        <div class="card card-dark">
+            <form action="<?php echo base_url("Admin/Post/insertPost") ?>" method="POST">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="title">Başlık</label>
+                        <input type="text" class="form-control" id="title" name="title" required placeholder="Başlık Girin">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">Resim Yükle</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="file" id="exampleInputFile">
+                                <label class="custom-file-label" for="exampleInputFile">Resim Seç</label>
+                            </div>
 
-            </div>
-            <div class="card-body">
-                Start creating your amazing application!
-            </div>
-            <div class="card-footer">
-                Footer
-            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tinymce">Açıklama</label>
+
+                        <textarea name="description" id="description"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="card-footer ">
+                    <div class="row justify-content-center"> <button type="submit" class="btn btn-outline-dark" style="width: 30%;">Ekle</button></div>
+
+                </div>
+            </form>
         </div>
     </section>
-
+    <script>
+        tinymce.init({
+            selector: '#description'
+        });
+    </script>
 </div>
 
 <?php $this->load->view("admin/includes/footer.php"); ?>
