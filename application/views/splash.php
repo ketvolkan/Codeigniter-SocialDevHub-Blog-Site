@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Social Dev Hub</title>
 
     <style>
     * {
@@ -254,6 +254,8 @@
 
 </head>
 
+<link rel="icon" href="<?=base_url("assets");?>/img/Socialdevhublogo3.png" type="image/gif">
+
 <body>
     <div class="container">
         <div class="scroller">
@@ -264,7 +266,6 @@
             </div>
         </div>
     </div>
-
 
 
 
