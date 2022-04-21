@@ -10,15 +10,17 @@
     <section class="content">
         <div class="col-12">
             <div class="card">
-                <div class="card-body table-responsive p-0" style="height: 300px;">
+                <div class="card-body table-responsive p-0" style="height: 750px;">
                     <table class="table table-head-fixed text-nowrap">
                         <thead>
                             <tr>
                                 <th>ID</th>
                                 <th>Başlık</th>
-                                <th>İçerik</th>
+                                <th width="100%">İçerik</th>
                                 <th>Yükleyen Kullanıcı</th>
                                 <th>Oluşturulma Tarihi</th>
+                                <th width="20%">Güncelle</th>
+                                <th width="20%">Sil</th>
                             </tr>
                         </thead>
                         <tbody>

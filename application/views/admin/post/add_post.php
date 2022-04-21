@@ -9,6 +9,22 @@
     <?php $this->load->view("admin/includes/content_header.php"); ?>
     <section class="content">
         <div class="card card-dark">
+            <?php if ($this->input->get("status") != null) {
+                if ($this->input->get("status") == true) {
+            ?>
+                    <div class="alert alert-success" role="alert">
+                        Ekleme Başarılı
+                    </div>
+
+                <?php
+                } else {
+                ?>
+                    <div class="alert alert-ganger" role="alert">
+                        Ekleme Başarısız
+                    </div>
+            <?php
+                }
+            } ?>
             <form action="<?php echo base_url("Admin/Post/insertPost") ?>" method="POST" enctype="multipart/form-data">
                 <div class="card-body">
                     <div class="form-group">
