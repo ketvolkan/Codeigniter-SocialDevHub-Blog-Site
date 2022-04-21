@@ -7,20 +7,19 @@ class User extends CI_Controller
     {
         parent::__construct();
         array_push($this->viewFolder, "Kullanıcı İşlemleri");
+        $this->load->model("user_model");
     }
     public function index()
     {
-        array_push($this->viewFolder, "Tüm Kullanıcılar");
-        $viewData = [
-            "viewFolder" => $this->viewFolder,
-        ];
-        $this->load->view("admin/user/list_user", $viewData);
+        redirect(base_url("Admin/User/Lists"));
     }
     public function lists()
     {
         array_push($this->viewFolder, "Tüm Kullanıcılar");
+        $users = $this->user_model->getAll();
         $viewData = [
             "viewFolder" => $this->viewFolder,
+            "users" => $users
         ];
         $this->load->view("admin/user/list_user", $viewData);
     }
@@ -34,19 +33,26 @@ class User extends CI_Controller
     }
     public function delete()
     {
-        array_push($this->viewFolder, "Kullanıcı Sil");
-        $viewData = [
-            "viewFolder" => $this->viewFolder,
-        ];
-        $this->load->view("admin/user/delete_user", $viewData);
+        $this->user_model->delete($this->input->get("id"));
+        redirect(base_url("Admin/User/Lists"));
     }
-
-    public function update()
+    public function insertUser()
     {
-        array_push($this->viewFolder, "Kullanıcı Düzenle");
-        $viewData = [
-            "viewFolder" => $this->viewFolder,
-        ];
-        $this->load->view("admin/user/update_user", $viewData);
+        $insert = $this->user_model->insert(
+            array(
+                "email"         => $this->input->post("email"),
+                "password"         => $this->input->post("password"),
+                "name"         => $this->input->post("name"),
+                "surname"   => $this->input->post("surname"),
+                //TODO fotoğraf yükleme düzenlenicek
+                "image_url"           => "",
+                "createdAt"     => date("Y-m-d H:i:s")
+            )
+        );
+        if ($insert) {
+            redirect(base_url("Admin/User/Add?status=true"));
+        } else {
+            redirect(base_url("Admin/User/Add?status=false"));
+        }
     }
 }

@@ -8,17 +8,38 @@
 <div class="content-wrapper">
     <?php $this->load->view("admin/includes/content_header.php"); ?>
     <section class="content">
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">Title</h3>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body table-responsive p-0" style="height: 750px;">
+                    <table class="table table-head-fixed text-nowrap">
+                        <thead>
+                            <tr>
+                                <th width="10%">Fotoğraf</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>İsim</th>
+                                <th width="20%">Sil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($users as $user) {
+
+                                $viewData = [
+                                    "user" => $user,
+
+                                ];
+
+                                $this->load->view("admin/user/list_user_table_row", $viewData);
+                            }
+                            ?>
+
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
-            <div class="card-body">
-                Start creating your amazing application!
-            </div>
-            <div class="card-footer">
-                Footer
-            </div>
+
         </div>
     </section>
 

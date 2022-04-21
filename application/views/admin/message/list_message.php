@@ -15,29 +15,21 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Başlık</th>
-                                <th width="100%">İçerik</th>
-                                <th>Yükleyen Kullanıcı</th>
-                                <th>Oluşturulma Tarihi</th>
-                                <th width="20%">Güncelle</th>
+                                <th>Ad Soyad</th>
+                                <th>Discord</th>
+                                <th>Email</th>
+                                <th width="100%">Mesaj</th>
                                 <th width="20%">Sil</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($posts as $post) {
-                                $user;
-                                foreach ($users as $currentUser) {
-                                    if ($currentUser->id == $post->id) {
-                                        $user = $currentUser;
-                                    }
-                                }
-                                $viewData = [
-                                    "user" => $user,
-                                    "post" => $post
-                                ];
+                            foreach ($messages as $message) {
 
-                                $this->load->view("admin/post/list_post_table_row", $viewData);
+                                $viewData = [
+                                    "message" => $message
+                                ];
+                                $this->load->view("admin/message/list_message_table_row", $viewData);
                             }
                             ?>
 

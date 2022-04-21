@@ -11,11 +11,7 @@ class Setting extends CI_Controller
 
     public function index()
     {
-        array_push($this->viewFolder, "Panel Ayarları");
-        $viewData = [
-            "viewFolder" => $this->viewFolder,
-        ];
-        $this->load->view("admin/setting/panel_setting", $viewData);
+        redirect(base_url("Admin/Setting/Panel"));
     }
     public function panel()
     {

@@ -41,18 +41,8 @@
                                 <p>Ekle</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="<?php echo base_url("Admin/Post/Update") ?>" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Güncelle</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?php echo base_url("Admin/Post/Delete") ?>" class="nav-link">
-                                <i class="fas fa-trash nav-icon"></i>
-                                <p>Sil</p>
-                            </a>
-                        </li>
+
+
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -76,18 +66,8 @@
                                 <p>Ekle</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="<?php echo base_url("Admin/User/Update") ?>" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Güncelle</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?php echo base_url("Admin/User/Delete") ?>" class="nav-link">
-                                <i class="fas fa-trash nav-icon"></i>
-                                <p>Sil</p>
-                            </a>
-                        </li>
+
+
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -109,6 +89,24 @@
                             <a href="<?php echo base_url("Admin/Setting/Panel") ?>" class="nav-link">
                                 <i class="fas fa-cog nav-icon"></i>
                                 <p>Panel Ayarları</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user"></i>
+                        <p>
+                            Mesajlar
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?php echo base_url("Admin/Contact/") ?>" class="nav-link">
+                                <i class="fas fa-cog nav-icon"></i>
+                                <p>Tüm Mesajlar</p>
                             </a>
                         </li>
 
