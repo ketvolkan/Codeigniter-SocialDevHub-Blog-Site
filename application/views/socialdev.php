@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
 
     <?php $this->load->view("includes/head"); ?>
 
     <?php $this->load->view("includes/socialdev_style"); ?>
 
-    </head>
+</head>
 
-    <body id="page-top">
-        
+<body id="page-top">
+
 
     <?php $this->load->view("includes/SocialDevViews/navbar"); ?>
 
@@ -25,17 +26,17 @@
 
     <?php $this->load->view("includes/SocialDevViews/contact"); ?>
 
-    
+
     <?php $this->load->view("includes/SocialDevViews/dc"); ?>
 
     <?php $this->load->view("includes/footer"); ?>
 
 
-    <?php $this->load->view("includes/SocialDevViews/portfolio_modals"); ?>
 
 
     <?php $this->load->view("includes/socialdev_script"); ?>
 
 
-    </body>
+</body>
+
 </html>
