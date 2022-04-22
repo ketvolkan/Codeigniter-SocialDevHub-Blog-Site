@@ -7,6 +7,9 @@ class Setting extends CI_Controller
     {
         parent::__construct();
         array_push($this->viewFolder, "Ayarlar");
+        if ($this->session->userdata("userid") == null) {
+            redirect(base_url("Admin/Login"));
+        }
     }
 
     public function index()

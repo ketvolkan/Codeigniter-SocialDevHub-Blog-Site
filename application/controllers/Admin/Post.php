@@ -9,6 +9,9 @@ class Post extends CI_Controller
         $this->load->model("post_model");
         $this->load->model("user_model");
         array_push($this->viewFolder, "Gönderi İşlemleri");
+        if ($this->session->userdata("userid") == null) {
+            redirect(base_url("Admin/Login"));
+        }
     }
 
     public function index()
@@ -60,6 +63,7 @@ class Post extends CI_Controller
                 "description"   => $this->input->post("description"),
                 //TODO fotoğraf yükleme düzenlenicek
                 "image"           => $this->input->post("title"),
+                "user_id"           => $this->session->userdata("userid"),
                 "createdAt"     => date("Y-m-d H:i:s")
             )
         );

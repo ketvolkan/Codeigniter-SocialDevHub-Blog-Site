@@ -18,6 +18,11 @@ class User_Model extends CI_Model
     {
         return $this->db->where("id", $id)->get($this->tableName)->result();
     }
+    public function getByEmailAndPassword($email, $password)
+    {
+        $array = array('email' => $email, 'password' => $password);
+        return $this->db->where($array)->get($this->tableName)->result();
+    }
     public function insert($data = array())
     {
         return $this->db->insert($this->tableName, $data);
