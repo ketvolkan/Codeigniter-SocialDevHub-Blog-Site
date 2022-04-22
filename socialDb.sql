@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 21, 2022 at 07:38 ÖS
+-- Generation Time: Apr 23, 2022 at 12:16 ÖÖ
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -43,7 +43,6 @@ INSERT INTO `contact` (`id`, `name`, `email`, `discord`, `message`) VALUES
 (1, 'asdasd', 'asdsadsa', 'asdsad', 'asdasd'),
 (2, 'asdasd', 'asdsadsa', 'asdsad', 'asdasd'),
 (4, 'sasa', 'sadasd', 'sadasd', 'sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads '),
-(5, 'sasa', 'sadasd', 'sadasd', 'sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads '),
 (6, 'sasa', 'sadasd', 'sadasd', 'sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads '),
 (7, 'sasa', 'sadasd', 'sadasd', 'sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads '),
 (8, 'sasa', 'sadasd', 'sadasd', 'sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads sadads '),
@@ -114,7 +113,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `email`, `password`, `name`, `surname`, `image_url`, `createdAt`) VALUES
 (1, 'ketvolkan1@gmail.com', '1504', 'volkan', 'ket', 'https://media-exp1.licdn.com/dms/image/D4E03AQGFz48PI7rOkw/profile-displayphoto-shrink_200_200/0/1643057302906?e=1651104000&v=beta&t=eW58w09bs9TtAly1kBXcC25ec40LetcSA7h4VRrVrmc', '2022-04-21 17:26:20'),
-(2, 'canelchavo@gmail.com', '3156', 'Hanifi Can', 'Seven', 'https://st.myideasoft.com/idea/gj/37/myassets/products/193/sade-maras-dondurmasi.jpg?revision=1597073965', '2022-04-21 17:26:20');
+(2, 'hanifi.anelka@hotmail.com', '3131', 'Hanifi Can', 'Seven', 'https://st.myideasoft.com/idea/gj/37/myassets/products/193/sade-maras-dondurmasi.jpg?revision=1597073965', '2022-04-21 17:26:20'),
+(3, 'bbaranozel0@gmail.com', '2626', 'Baran', 'Özel', 'https://pbs.twimg.com/profile_images/847201438711320576/JZHnopkx_400x400.jpg', '2022-04-22 22:14:59');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
