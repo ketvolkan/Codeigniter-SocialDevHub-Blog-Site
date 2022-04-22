@@ -8,6 +8,9 @@ class Contact extends CI_Controller
         parent::__construct();
         array_push($this->viewFolder, "Mesajlar");
         $this->load->model("contact_model");
+        if ($this->session->userdata("userid") == null) {
+            redirect(base_url("Admin/Login"));
+        }
     }
 
     public function index()

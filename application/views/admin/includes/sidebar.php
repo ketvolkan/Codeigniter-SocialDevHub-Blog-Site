@@ -1,6 +1,6 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?php echo base_url("/") ?>" class="brand-link">
+    <a href="<?php echo base_url("/") ?>" class="brand-link bg-purple">
         <img src=<?php echo base_url("assets/img/Socialdevhublogo.png") ?> alt="socialdevhublogo" class="brand-image img-circle elevation-3 bg-light" style="opacity: .8;padding:3px;width:15%;heigth:15%">
         <span class="brand-text font-weight-light">Social Dev Hub</span>
     </a>
@@ -10,10 +10,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="<?php echo base_url("assets/adminAssets/dist/img/user2-160x160.jpg") ?>" class="img-circle elevation-2" alt="User Image">
+                <img src="<?php echo $this->session->userdata("userimage") ?>" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <a href="<?php echo base_url("Admin/User/Update"); ?>" class="d-block text-capitalize"><?php echo $this->session->userdata("username") . " " . $this->session->userdata("usersurname")  ?></a>
             </div>
         </div>
 
