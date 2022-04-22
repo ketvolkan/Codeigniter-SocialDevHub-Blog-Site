@@ -31,16 +31,7 @@
                         <label for="title">Başlık</label>
                         <input type="text" class="form-control" id="title" name="title" required placeholder="Başlık Girin">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputFile">Resim Yükle</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="file" id="exampleInputFile">
-                                <label class="custom-file-label" for="exampleInputFile">Resim Seç</label>
-                            </div>
 
-                        </div>
-                    </div>
                     <div class="form-group">
                         <label for="tinymce">Açıklama</label>
 

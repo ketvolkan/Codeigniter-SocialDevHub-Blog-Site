@@ -12,16 +12,30 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
-                        </div>
-                    </div>
+                    <?php
+                    $counter = 0;
+                    $imgUrl = "";
+                    foreach ($posts as $post) {
+                        if ($counter % 6 == 0) {
+                            $imgUrl = "assets/img/portfolio/cabin.png";
+                        } else if ($counter % 5 == 0) {
+                            $imgUrl = "assets/img/portfolio/cake.png";
+                        } else if ($counter % 4 == 0) {
+                            $imgUrl = "assets/img/portfolio/circus.png";
+                        } else if ($counter % 3 == 0) {
+                            $imgUrl = "assets/img/portfolio/safe.png";
+                        } else if ($counter % 2 == 0) {
+                            $imgUrl = "assets/img/portfolio/submarine.png";
+                        } else {
+                            $imgUrl = "assets/img/portfolio/game.png";
+                        }
+                        $counter++;
+                        $viewData = [
+                            "post" => $post, "imgUrl" => $imgUrl,
+                        ];
+                        $this->load->view("includes/SocialDevViews/portfolio_item", $viewData);
+                    }
+                    ?>
 
                 </div>
             </div>
