@@ -15,6 +15,9 @@
     <?php $this->load->view("includes/SocialDevViews/navbar"); ?>
 
 
+    <?php $this->load->view("includes/SocialDevViews/dcmodal"); ?>
+
+
     <?php $this->load->view("includes/SocialDevViews/masthead"); ?>
 
 
