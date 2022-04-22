@@ -15,9 +15,6 @@
     <?php $this->load->view("includes/SocialDevViews/navbar"); ?>
 
 
-    <?php $this->load->view("includes/SocialDevViews/dcmodal"); ?>
-
-
     <?php $this->load->view("includes/SocialDevViews/masthead"); ?>
 
 
@@ -27,14 +24,13 @@
     <?php $this->load->view("includes/SocialDevViews/about"); ?>
 
 
+    <?php $this->load->view("includes/SocialDevViews/dc"); ?>
+
+
     <?php $this->load->view("includes/SocialDevViews/contact"); ?>
 
 
-    <?php $this->load->view("includes/SocialDevViews/dc"); ?>
-
     <?php $this->load->view("includes/footer"); ?>
-
-
 
 
     <?php $this->load->view("includes/socialdev_script"); ?>

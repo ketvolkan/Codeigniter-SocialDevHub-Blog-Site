@@ -63,7 +63,7 @@ print {
 .link {
   height: 30px;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: #343a3f;
   text-decoration: none;
   display: flex;
   font-weight: bold;
