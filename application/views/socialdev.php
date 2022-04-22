@@ -25,6 +25,8 @@
 
     <?php $this->load->view("includes/SocialDevViews/contact"); ?>
 
+    
+    <?php $this->load->view("includes/SocialDevViews/dc"); ?>
 
     <?php $this->load->view("includes/footer"); ?>
 

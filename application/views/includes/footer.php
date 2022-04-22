@@ -1,5 +1,5 @@
         <!-- Footer-->
-        <footer class="footer text-center bg-masthead">
+        <footer class="footer text-center bg-head">
             <div class="container">
                 <div class="row">
                     <!-- Footer Location-->
@@ -37,6 +37,6 @@
             </div>
         </footer>
         <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white bg-head">
+        <div class="copyright py-4 text-center text-white bg-head2">
             <div class="container"><small>Tüm Hakları Saklıdır &copy; <?php echo date("Y"); ?></small></div>
         </div>
