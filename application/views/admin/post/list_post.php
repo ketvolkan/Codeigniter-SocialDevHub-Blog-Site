@@ -28,7 +28,7 @@
                             foreach ($posts as $post) {
                                 $user;
                                 foreach ($users as $currentUser) {
-                                    if ($currentUser->id == $post->id) {
+                                    if ($currentUser->id == $post->user_id) {
                                         $user = $currentUser;
                                     }
                                 }
