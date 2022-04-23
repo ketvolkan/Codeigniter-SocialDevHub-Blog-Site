@@ -2,7 +2,7 @@
         <section class="page-section portfolio bg-portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Post</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><?php echo $setting->post_title; ?></h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
