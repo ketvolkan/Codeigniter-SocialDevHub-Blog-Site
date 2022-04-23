@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 23, 2022 at 12:16 ÖÖ
+-- Generation Time: Apr 23, 2022 at 12:47 ÖS
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -87,8 +87,28 @@ INSERT INTO `posts` (`id`, `user_id`, `title`, `description`, `image`, `createdA
 
 CREATE TABLE IF NOT EXISTS `settings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `site_title` text NOT NULL,
+  `masthead_title` text NOT NULL,
+  `masthead_description` text NOT NULL,
+  `post_title` text NOT NULL,
+  `about_title` text NOT NULL,
+  `about_description` text NOT NULL,
+  `discord_title` text NOT NULL,
+  `discord_description` text NOT NULL,
+  `discord_url` text NOT NULL,
+  `contact_title` text NOT NULL,
+  `instagram` text NOT NULL,
+  `github` text NOT NULL,
+  `tiktok` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `settings`
+--
+
+INSERT INTO `settings` (`id`, `site_title`, `masthead_title`, `masthead_description`, `post_title`, `about_title`, `about_description`, `discord_title`, `discord_description`, `discord_url`, `contact_title`, `instagram`, `github`, `tiktok`) VALUES
+(1, 'SOCIAL DEV HUB', 'SOCIAL DEVELOPER HUB', '<p>G&ouml;zlerinizi B&uuml;r&uuml;yen Algı Ağlarını Yırtın.</p>', 'POST', 'HAKKIMIZDA', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quas ducimus odio assumenda officiis at totam, fugit architecto similique nostrum atque molestias. Officiis porro, reiciendis quisquam non distinctio optio ipsa.</p>', 'DISCORD SUNUCUMUZA KATIL', '<p>Yazılım, grafik tasarım ve daha bir &ccedil;ok konuda; yardım almak, sohbet etmek, eğlenmek ve projelerde bulunmak istiyorsan</p>', 'https://discord.com/invite/2RDudTz5Kd', 'BİZİMLE İLETİŞİME GEÇ', 'https://www.instagram.com/canchavo7/?hl=tr', 'https://github.com/ketvolkan/Codeigniter-SocialDevHub-Blog-Site', 'https://www.tiktok.com/@socialdevhub?lang=tr-TR');
 
 -- --------------------------------------------------------
 

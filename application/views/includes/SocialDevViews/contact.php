@@ -2,7 +2,7 @@
         <section class="page-section bg-masthead" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-white mb-0">BİZİMLE İLETİŞİME GEÇ
+                <h2 class="page-section-heading text-center text-white mb-0"><?php echo $setting->contact_title; ?>
                 </h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -23,15 +23,13 @@
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="#contact" method="post">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input required="" class="form-control box-shadow" id="name" type="text"
-                                    placeholder="Enter your name..." data-sb-validations="required" />
+                                <input required="" class="form-control box-shadow" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">*Ad-Soyad</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Ad-Soyad Girin</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input required="" class="form-control box-shadow" id="email" type="email"
-                                    placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input required="" class="form-control box-shadow" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">*Email</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Email Girin
                                 </div>
@@ -39,17 +37,14 @@
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control box-shadow" id="dc" type="tel"
-                                    placeholder="(123) 456-7890" data-sb-validations="" />
+                                <input class="form-control box-shadow" id="dc" type="tel" placeholder="(123) 456-7890" data-sb-validations="" />
                                 <label for="dc">Discord ID</label>
                                 <div class="invalid-feedback" data-sb-feedback="">Discord ID
                                 </div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control box-shadow" required="" id="message" type="text"
-                                    placeholder="Enter your message here..." style="height: 10rem"
-                                    data-sb-validations="required"></textarea>
+                                <textarea class="form-control box-shadow" required="" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">*Mesajınız</label>
 
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Mesajınızı Girin

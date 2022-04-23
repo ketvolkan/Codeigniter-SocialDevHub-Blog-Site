@@ -85,12 +85,7 @@
                                 <p>Site Ayarları</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="<?php echo base_url("Admin/Setting/Panel") ?>" class="nav-link">
-                                <i class="fas fa-cog nav-icon"></i>
-                                <p>Panel Ayarları</p>
-                            </a>
-                        </li>
+
 
                     </ul>
                 </li>
